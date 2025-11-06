@@ -22,3 +22,4 @@ C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Debug\net
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Debug\net9.0\refint\ECommerceSystem.Core.dll
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Debug\net9.0\ECommerceSystem.Core.pdb
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Debug\net9.0\ref\ECommerceSystem.Core.dll
+C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Debug\net9.0\ECommerceSystem.Core.sourcelink.json

@@ -29,6 +29,10 @@ services:
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_URLS=http://+:80
+      # Initial admin for development (enable only in dev)
+      - InitialAdmin__Enabled=true
+      - InitialAdmin__Email=admin@example.com
+      - InitialAdmin__Password=P@ssw0rd
     networks:
       - ecommerce_network
 

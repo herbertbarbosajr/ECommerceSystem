@@ -1,0 +1,13 @@
+C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\bin\Release\net9.0\ECommerceSystem.Core.deps.json
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\bin\Release\net9.0\ECommerceSystem.Core.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\bin\Release\net9.0\ECommerceSystem.Core.pdb
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.csproj.AssemblyReference.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.AssemblyInfoInputs.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.AssemblyInfo.cs
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.csproj.CoreCompileInputs.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.sourcelink.json
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\refint\ECommerceSystem.Core.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ECommerceSystem.Core.pdb
+C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Core\obj\Release\net9.0\ref\ECommerceSystem.Core.dll

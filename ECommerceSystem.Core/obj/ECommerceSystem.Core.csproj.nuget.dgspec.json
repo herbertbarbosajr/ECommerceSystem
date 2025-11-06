@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {}
+    "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {
+    "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj",
+        "projectUniqueName": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj",
         "projectName": "ECommerceSystem.Core",
-        "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj",
+        "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj",
         "packagesPath": "C:\\Users\\Herbert\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\obj\\",
+        "outputPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

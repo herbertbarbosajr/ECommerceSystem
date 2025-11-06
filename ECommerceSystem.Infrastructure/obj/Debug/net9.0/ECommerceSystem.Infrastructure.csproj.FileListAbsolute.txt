@@ -28,3 +28,4 @@ C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Debug\net9.0\refint\ECommerceSystem.Infrastructure.dll
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Debug\net9.0\ECommerceSystem.Infrastructure.pdb
 C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Debug\net9.0\ref\ECommerceSystem.Infrastructure.dll
+C:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Debug\net9.0\ECommerceSystem.Infrastructure.sourcelink.json
