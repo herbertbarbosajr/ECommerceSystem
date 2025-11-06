@@ -1,0 +1,16 @@
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\bin\Release\net9.0\ECommerceSystem.Infrastructure.deps.json
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\bin\Release\net9.0\ECommerceSystem.Infrastructure.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\bin\Release\net9.0\ECommerceSystem.Infrastructure.pdb
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\bin\Release\net9.0\ECommerceSystem.Core.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\bin\Release\net9.0\ECommerceSystem.Core.pdb
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.csproj.AssemblyReference.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.AssemblyInfoInputs.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.AssemblyInfo.cs
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.csproj.CoreCompileInputs.cache
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.sourcelink.json
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerc.EAFAF1D8.Up2Date
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\refint\ECommerceSystem.Infrastructure.dll
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ECommerceSystem.Infrastructure.pdb
+c:\Users\Herbert\source\repos\ECommerceSystem\ECommerceSystem.Infrastructure\obj\Release\net9.0\ref\ECommerceSystem.Infrastructure.dll

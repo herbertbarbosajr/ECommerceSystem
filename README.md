@@ -178,9 +178,58 @@ Configure as chaves JWT no `appsettings.json`:
 - **Admin**: Acesso completo ao sistema
 - **Customer**: Acesso aos próprios pedidos e produtos
 
+### Role seeding (criação automática)
+
+Ao iniciar a aplicação, o sistema garante que as roles necessárias existam no banco de dados. Isso é feito de forma idempotente durante o startup da API — as roles `Admin` e `Customer` são criadas automaticamente se estiverem ausentes.
+
+Como criar um usuário administrador inicial (exemplo):
+
+1. Faça um POST para o endpoint de registro:
+
+```http
+POST /api/auth/register
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "P@ssw0rd",
+  "firstName": "Admin",
+  "lastName": "User",
+  "isAdmin": true
+}
+```
+
+2. A API irá atribuir automaticamente a role `Admin` ao usuário quando `isAdmin` for `true`.
+
+Observação: Em ambientes de produção, considere criar um processo seguro para provisionar o primeiro administrador (ex.: script seguro, variável de ambiente, ou procedimento de criação manual com acesso controlado).
+
 ### Políticas
 - `AdminOnly`: Apenas administradores
 - `CustomerOnly`: Apenas clientes
+
+### Initial admin (criação automática opcional)
+
+Você pode configurar a criação automática de um usuário administrador na inicialização da API (útil em desenvolvimento). Para ativar, defina as seguintes chaves em `appsettings.json` ou variáveis de ambiente:
+
+- `InitialAdmin:Enabled` (boolean) — habilita a criação automática
+- `InitialAdmin:Email` (string) — email do administrador inicial
+- `InitialAdmin:Password` (string) — senha do administrador inicial
+
+Exemplo `appsettings.Development.json`:
+
+```json
+{
+  "InitialAdmin": {
+    "Enabled": true,
+    "Email": "admin@example.com",
+    "Password": "P@ssw0rd"
+  }
+}
+```
+
+O comportamento é idempotente: se já existir um usuário com a role `Admin`, nenhum usuário adicional será criado.
+
+Observação: não habilite a criação automática em produção sem um processo seguro para armazenar credenciais.
 
 ## 🧪 Testes
 
