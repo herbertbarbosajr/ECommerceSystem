@@ -3632,11 +3632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\ECommerceSystem.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\ECommerceSystem.Tests.csproj",
       "projectName": "ECommerceSystem.Tests",
-      "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\ECommerceSystem.Tests.csproj",
+      "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\ECommerceSystem.Tests.csproj",
       "packagesPath": "C:\\Users\\Herbert\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\obj\\",
+      "outputPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3658,17 +3658,17 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj": {
-              "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj"
+            "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj"
             },
-            "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {
-              "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj"
+            "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj": {
+              "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Core\\ECommerceSystem.Core.csproj"
             },
-            "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Infrastructure\\ECommerceSystem.Infrastructure.csproj": {
-              "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Infrastructure\\ECommerceSystem.Infrastructure.csproj"
+            "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Infrastructure\\ECommerceSystem.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Infrastructure\\ECommerceSystem.Infrastructure.csproj"
             },
-            "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj": {
-              "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj"
+            "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj": {
+              "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj"
             }
           }
         }
@@ -3738,7 +3738,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

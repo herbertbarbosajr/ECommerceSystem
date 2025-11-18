@@ -143,6 +143,8 @@ Configure as chaves JWT no `appsettings.json`:
 ### Autenticação
 - `POST /api/auth/register` - Registrar usuário
 - `POST /api/auth/login` - Login
+- `POST /api/auth/forgot-password` - Solicitar redefinição de senha
+- `POST /api/auth/reset-password` - Redefinir a senha com token
 
 ### Produtos (Admin)
 - `GET /api/products` - Listar produtos (com paginação e filtros)

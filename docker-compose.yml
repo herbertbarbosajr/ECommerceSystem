@@ -36,6 +36,24 @@ services:
     networks:
       - ecommerce_network
 
+  ecommerce_web:
+    build:
+      context: ./web
+      dockerfile: Dockerfile
+    container_name: ecommerce_web
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./web:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - VITE_API_BASE_URL=http://localhost:8080
+    depends_on:
+      - ecommerce_api
+    networks:
+      - ecommerce_network
+
 volumes:
   postgres_data:
 

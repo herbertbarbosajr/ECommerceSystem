@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wJTmAZnMnYg=",
+  "dgSpecHash": "t+npWPC8hB0=",
   "success": true,
-  "projectFilePath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj",
+  "projectFilePath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Herbert\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Herbert\\.nuget\\packages\\mediatr\\12.4.1\\mediatr.12.4.1.nupkg.sha512",

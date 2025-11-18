@@ -4216,11 +4216,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj",
       "projectName": "ECommerceSystem.WebApi",
-      "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj",
+      "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\ECommerceSystem.WebApi.csproj",
       "packagesPath": "C:\\Users\\Herbert\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4242,8 +4242,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj": {
-              "projectPath": "c:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj"
+            "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\Herbert\\source\\repos\\ECommerceSystem\\ECommerceSystem.Application\\ECommerceSystem.Application.csproj"
             }
           }
         }
@@ -4318,7 +4318,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
