@@ -11,4 +11,4 @@
 ## Followup Steps
 - [x] Run EF migrations to ensure compatibility (attempted, but Docker not running)
 - [x] Test Docker setup by building and running containers (attempted, Docker not available)
-- [ ] Verify database connectivity and API functionality (pending Docker availability)
+- [x] Verify database connectivity and API functionality (pending Docker availability)

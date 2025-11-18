@@ -18,4 +18,5 @@ EXPOSE 3000
 
 # Comando para iniciar a aplicação em modo de desenvolvimento
 # O '--host' é necessário para expor o servidor para fora do contêiner
+# O '--port' define a porta que será usada
 CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "3000"]

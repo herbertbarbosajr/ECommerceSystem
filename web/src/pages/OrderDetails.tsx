@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { orders as ordersApi } from '../services/api';
+import { orders as ordersApi } from 'services/api';
 import { toast } from 'react-toastify';
-import { Order } from '../types';
+import { Order } from 'types';
 
 const OrderDetails: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -41,13 +41,13 @@ const OrderDetails: React.FC = () => {
       
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Itens</h2>
-        {order.items.map(item => (
-          <div key={item.productId} className="flex justify-between items-center border-b py-2">
-            <p>{item.productName} (x{item.quantity})</p>
-            <p>R$ {(item.price * item.quantity).toFixed(2)}</p>
+        {order.orderItems.map(item => (
+          <div key={item.id} className="flex justify-between items-center border-b py-2">
+            <p>{item.product.name} (x{item.quantity})</p>
+            <p>R$ {item.totalPrice.toFixed(2)}</p>
           </div>
         ))}
-        <div className="text-right mt-4 text-xl font-bold">Total: R$ {order.total.toFixed(2)}</div>
+        <div className="text-right mt-4 text-xl font-bold">Total: R$ {order.totalAmount.toFixed(2)}</div>
       </div>
     </div>
   );

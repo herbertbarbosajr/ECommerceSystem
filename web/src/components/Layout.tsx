@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 
@@ -7,22 +7,23 @@ interface LayoutProps {
 }
 
 export default function Layout({ children }: LayoutProps) {
+  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { isAuthenticated, isAdmin, user, logout } = useAuth();
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Navigation */}
       <nav className="bg-white shadow-lg">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="flex justify-between h-16">
-            <div className="flex">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center">
               {/* Logo */}
               <Link to="/" className="flex items-center">
                 <span className="text-xl font-bold text-gray-800">ECommerce</span>
               </Link>
 
-              {/* Navigation Links */}
-              <div className="ml-10 flex items-center space-x-4">
+              {/* Desktop Navigation Links */}
+              <div className="hidden md:ml-10 md:flex md:items-center md:space-x-4">
                 {isAuthenticated && (
                   <>
                     <Link to="/" className="text-gray-600 hover:text-gray-900">
@@ -48,7 +49,7 @@ export default function Layout({ children }: LayoutProps) {
             </div>
 
             {/* Right side */}
-            <div className="flex items-center">
+            <div className="hidden md:flex md:items-center">
               {isAuthenticated ? (
                 <div className="flex items-center space-x-4">
                   <Link to="/cart" className="text-gray-600 hover:text-gray-900">
@@ -81,12 +82,64 @@ export default function Layout({ children }: LayoutProps) {
                 </div>
               )}
             </div>
+
+            {/* Mobile Menu Button */}
+            <div className="md:hidden flex items-center">
+              <button
+                onClick={() => setMobileMenuOpen(!isMobileMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              >
+                <span className="sr-only">Abrir menu principal</span>
+                {/* Icon for menu (hamburger) */}
+                <svg className="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
+
+        {/* Mobile Menu, show/hide based on state */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {isAuthenticated && (
+                <>
+                  <Link to="/" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Produtos</Link>
+                  <Link to="/orders" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Meus Pedidos</Link>
+                </>
+              )}
+              {isAdmin && (
+                <>
+                  <Link to="/admin/products" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Gerenciar Produtos</Link>
+                  <Link to="/admin/orders" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Gerenciar Pedidos</Link>
+                </>
+              )}
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-200">
+              {isAuthenticated ? (
+                <div className="px-2 space-y-1">
+                  <div className="px-3 py-2">
+                    <div className="text-base font-medium text-gray-800">{user?.email}</div>
+                  </div>
+                  <Link to="/cart" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Carrinho</Link>
+                  <button onClick={logout} className="w-full text-left text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">
+                    Sair
+                  </button>
+                </div>
+              ) : (
+                <div className="px-2 space-y-1">
+                  <Link to="/login" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Login</Link>
+                  <Link to="/register" className="text-gray-600 hover:bg-gray-50 hover:text-gray-900 block px-3 py-2 rounded-md text-base font-medium">Registrar</Link>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+      <main className="flex-grow max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 w-full">
         {children}
       </main>
 

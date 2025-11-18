@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { products as productsApi } from '../services/api';
+import { products as productsApi } from 'services/api';
 import { toast } from 'react-toastify';
-import { Product } from '../types';
+import { Product } from 'types';
 
 // TODO: Implementar um contexto ou estado global para o carrinho
 const addToCart = (product: Product, quantity: number) => {

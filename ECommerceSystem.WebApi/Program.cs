@@ -122,6 +122,23 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ECommerceSystem.Application.Handlers.CreateProductHandler).Assembly));
 
+// CORS configuration for frontend
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend", policy =>
+    {
+        policy.WithOrigins(
+                "http://localhost:3000",
+                "http://localhost:80",
+                "http://127.0.0.1:3000",
+                "http://ecommerce_web:3000"
+            )
+            .AllowAnyMethod()
+            .AllowAnyHeader()
+            .AllowCredentials();
+    });
+});
+
 var app = builder.Build();
 
 // Apply migrations (with logging of pending/applied migrations for debugging)
@@ -251,6 +268,11 @@ using (var scope = app.Services.CreateScope())
 }
 
 // Configure the HTTP request pipeline.
+app.UseRouting();
+
+// Enable CORS as early as possible (before other middleware)
+app.UseCors("AllowFrontend");
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();

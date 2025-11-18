@@ -1,10 +1,13 @@
 export interface Product {
-  id: string;
+  id: number;
   name: string;
   description: string;
   price: number;
   stockQuantity: number;
   isActive: boolean;
+  imageUrl?: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export interface User {
