@@ -83,12 +83,12 @@ export const products = {
 
 // 5. Funções relacionadas a pedidos
 export const orders = {
-  getAll: async () => { 
-    const { data } = await apiClient.get('/api/Orders');
+  getAll: async () => {
+    const { data } = await apiClient.get('/api/Orders/all');
     return data;
   },
   getMyOrders: async () => { // Para Cliente
-    const { data } = await apiClient.get('/api/Orders/my-orders');
+    const { data } = await apiClient.get('/api/Orders');
     return data;
   },
   getById: async (id: string) => {
@@ -105,14 +105,22 @@ export const orders = {
   },
 };
 
-// 6. Funções do carrinho (exemplo)
+// 6. Funções do carrinho
 export const cart = {
     getItems: async () => {
         const { data } = await apiClient.get('/api/Cart');
         return data;
     },
-    addItem: async (productId: string, quantity: number) => {
+    addItem: async (productId: number, quantity: number) => {
         const { data } = await apiClient.post('/api/Cart/items', { productId, quantity });
+        return data;
+    },
+    updateItem: async (cartItemId: number, quantity: number) => {
+        const { data } = await apiClient.put(`/api/Cart/items/${cartItemId}`, { quantity });
+        return data;
+    },
+    removeItem: async (cartItemId: number) => {
+        const { data } = await apiClient.delete(`/api/Cart/items/${cartItemId}`);
         return data;
     }
 }

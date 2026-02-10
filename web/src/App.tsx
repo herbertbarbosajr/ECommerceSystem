@@ -16,6 +16,7 @@ import OrderDetails from '@/pages/OrderDetails';
 import AdminProducts from '@/pages/Products';
 import AdminOrders from '@/pages/Orders';
 import { AuthProvider, useAuth } from '@/contexts/AuthContext';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const AppRoutes = () => {
   const { isAuthenticated, isAdmin } = useAuth();
@@ -99,10 +100,12 @@ const AppRoutes = () => {
 function App() {
   return (
     <BrowserRouter>
-      <AuthProvider>
-        <ToastContainer position="top-right" theme="colored" />
-        <AppRoutes />
-      </AuthProvider>
+      <ThemeProvider defaultTheme="light" storageKey="ecommerce-theme">
+        <AuthProvider>
+          <ToastContainer position="top-right" theme="colored" />
+          <AppRoutes />
+        </AuthProvider>
+      </ThemeProvider>
     </BrowserRouter>
   );
 }

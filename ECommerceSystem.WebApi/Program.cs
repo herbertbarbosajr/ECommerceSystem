@@ -4,6 +4,7 @@ using ECommerceSystem.Core.Interfaces;
 using ECommerceSystem.WebApi.HealthChecks;
 using ECommerceSystem.Infrastructure;
 using ECommerceSystem.Infrastructure.Data;
+using ECommerceSystem.Infrastructure.Repositories;
 using ECommerceSystem.WebApi.Controllers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
@@ -27,7 +28,6 @@ builder.Services.AddHealthChecks()
     .AddDbContextCheck<ECommerceDbContext>("database", tags: new[] { "ready" })
     .AddNpgSql(
         builder.Configuration.GetConnectionString("DefaultConnection")!,
-        name: "postgres",
         tags: new[] { "ready" },
         timeout: TimeSpan.FromSeconds(3))
     .AddCheck<MigrationsHealthCheck>("migrations", tags: new[] { "ready" });
@@ -119,6 +119,9 @@ builder.Services.AddAuthorization(options =>
 
 // Application services
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IOrderRepository, OrderRepository>();
+builder.Services.AddScoped<ICartRepository, CartRepository>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(ECommerceSystem.Application.Handlers.CreateProductHandler).Assembly));
 

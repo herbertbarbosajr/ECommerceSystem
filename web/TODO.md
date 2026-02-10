@@ -1,28 +1,18 @@
-# TODO: Modernize UI Components in Pages
+# Modernize ECommerce UI
 
-## Pages to Update:
-- [x] Register.tsx - Replace native form elements with modern UI components
-- [x] Products.tsx - Replace native form and list with modern form and table components
-- [x] Orders.tsx - Replace native list with modern table components
-- [ ] Home.tsx - Add icons and modern card components
-- [ ] Cart.tsx - Replace native elements with modern components and icons
-- [ ] ForgotPassword.tsx - Replace native form with modern form components
-- [ ] ResetPassword.tsx - Replace native form with modern form components
-- [ ] ProductDetails.tsx - Add icons and modern button components
-- [ ] MyOrders.tsx - Replace native list with modern table components
-- [ ] OrderDetails.tsx - Replace native list with modern table components
+## Plan Overview
+- Add dark mode support using next-themes
+- Enhance styling with gradients, shadows, and modern colors
+- Add subtle animations and hover effects
+- Improve responsiveness and overall design
 
-## Components to Use:
-- Form components: Form, FormField, FormItem, FormLabel, FormControl, FormMessage
-- Input components: Input
-- Button components: Button with variants
-- Table components: Table, TableHeader, TableBody, TableRow, TableHead, TableCell
-- Card components: Card, CardHeader, CardTitle, CardContent
-- Icons: From lucide-react (ShoppingCart, Plus, Trash, etc.)
-
-## Steps:
-1. Update Register.tsx with modern form components
-2. Update Products.tsx with form and table
-3. Update Orders.tsx with table
-4. Update remaining pages with appropriate components
-5. Test all pages for proper functionality
+## Steps
+- [x] Install next-themes dependency
+- [x] Update Tailwind config for dark mode
+- [x] Create ThemeProvider component
+- [x] Update global styles in index.css for dark mode
+- [x] Modernize Layout.tsx with gradients, shadows, and animations
+- [x] Enhance Home.tsx product cards with animations
+- [x] Add dark mode toggle button to Layout
+- [ ] Test UI in both light and dark modes
+- [ ] Ensure responsiveness across devices

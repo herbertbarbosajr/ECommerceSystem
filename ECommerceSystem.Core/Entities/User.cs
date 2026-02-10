@@ -8,5 +8,6 @@ public class User : IdentityUser
     public string LastName { get; set; } = string.Empty;
     public bool IsAdmin { get; set; } = false;
     public string? RefreshToken { get; set; }
+    public Cart? Cart { get; set; }
     public ICollection<Order> Orders { get; set; } = new List<Order>();
 }

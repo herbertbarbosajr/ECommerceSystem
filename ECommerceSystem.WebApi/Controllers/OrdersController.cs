@@ -31,6 +31,15 @@ public class OrdersController : ControllerBase
         return Ok(orders);
     }
 
+    [HttpGet("all")]
+    [Authorize(Policy = "AdminOnly")]
+    public async Task<IActionResult> GetAllOrders()
+    {
+        // For admin to get all orders - need to implement a query for this
+        // For now, return empty array as placeholder
+        return Ok(new List<OrderDto>());
+    }
+
     [HttpGet("{id}")]
     public async Task<IActionResult> GetOrder(int id)
     {
